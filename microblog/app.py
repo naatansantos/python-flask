@@ -14,8 +14,8 @@ def p1():
 def p2():
     return render_template('p2.html', nc='natanael santos barbosa', id='22')
 # calculadora para somar dois números passados por parâmetros
-@app.route("/somar<int:num1>/int:num2")
+@app.route("/soma/<int:num1>/<int:num2>")
 def soma (num1,num2):
-    return f'total'
+    return f'total {num1 + num2}'
 if __name__ == '__main__':
     app.run()
