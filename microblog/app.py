@@ -17,5 +17,10 @@ def p2():
 @app.route("/soma/<int:num1>/<int:num2>")
 def soma (num1,num2):
     return f'total {num1 + num2}'
+# Minha página pessoal
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
+
 if __name__ == '__main__':
     app.run()
