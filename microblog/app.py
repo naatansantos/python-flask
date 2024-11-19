@@ -22,5 +22,9 @@ def soma (num1,num2):
 def sobre():
     return render_template("sobre.html")
 
+@app.route('/dados')
+def dados():
+    return render_template('dados.html')
+
 if __name__ == '__main__':
     app.run()
